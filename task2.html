@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Example</title>
+    <style>
+        /* Tag Selectors */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Class Selectors */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .centered {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #333;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle {
+            border-radius: 50%;
+            background-color: #4caf50;
+        }
+
+        .rounded {
+            border-radius: 8px;
+        }
+
+        .large-text {
+            font-size: 24px;
+        }
+
+        .small-text {
+            font-size: 12px;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .shadow {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .dotted-border {
+            border: 2px dotted #333;
+        }
+
+        .dashed-border {
+            border: 2px dashed #333;
+        }
+
+        .colored-border {
+            border-color: red;
+        }
+
+        .padded {
+            padding: 10px;
+        }
+
+        .margined {
+            margin: 10px;
+        }
+
+        .wide {
+            width: 100%;
+        }
+
+        .narrow {
+            width: 50%;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* ID Selectors */
+        #header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 4px solid #4caf50;
+        }
+
+        #main-content {
+            padding: 20px;
+            background-color: #e9ecef;
+        }
+
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #important {
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+        }
+
+        #note {
+            font-size: 14px;
+            color: blue;
+            text-align: right;
+        }
+
+        #image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #image {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #4caf50;
+        }
+
+        #content-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #fff;
+        }
+
+        #description {
+            font-style: italic;
+            color: #555;
+        }
+
+        #button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #warning {
+            background-color: #ffeb3b;
+            padding: 10px;
+            border-left: 5px solid #f44336;
+        }
+
+        #success {
+            background-color: #4caf50;
+            padding: 10px;
+            border-left: 5px solid #388e3c;
+            color: white;
+        }
+
+        #error {
+            background-color: #f44336;
+            padding: 10px;
+            border-left: 5px solid #d32f2f;
+            color: white;
+        }
+
+        #info {
+            background-color: #2196f3;
+            padding: 10px;
+            border-left: 5px solid #1976d2;
+            color: white;
+        }
+
+        #quote {
+            font-style: italic;
+            border-left: 5px solid #ccc;
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        #alert {
+            background-color: #ff9800;
+            padding: 10px;
+            border-left: 5px solid #ef6c00;
+            color: white;
+        }
+
+        #container-flex {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        #box1, #box2, #box3 {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>CSS Properties Example</h1>
+    </div>
+
+    <div id="main-content" class="container">
+        <p class="highlight">This is a highlighted paragraph.</p>
+        <p class="underline">This paragraph is underlined.</p>
+        <p class="italic">This paragraph is in italic.</p>
+        <p id="important" class="large-text">This is an important large text.</p>
+        <p id="note" class="small-text">This is a small note text aligned to the right.</p>
+
+        <div id="content-box" class="rounded shadow">
+            <p id="description">This box has rounded corners and a shadow.</p>
+            <p class="padded">This text has padding around it.</p>
+            <p class="margined">This text has margins around it.</p>
+        </div>
+
+        <div id="image-container">
+            <img id="image" src="https://via.placeholder.com/100" alt="Placeholder Image">
+        </div>
+
+        <div class="box circle">Circle</div>
+        <div class="box colored-border">Colored Border</div>
+        <div class="box dotted-border">Dotted Border</div>
+        <div class="box dashed-border">Dashed Border</div>
+
+        <div id="container-flex" class="flex">
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+        </div>
+
+        <div id="quote">This is an example of a blockquote styled with CSS.</div>
+        <div id="warning">This is a warning message.</div>
+        <div id="success">This is a success message.</div>
+        <div id="error">This is an error message.</div>
+        <div id="info">This is an informational message.</div>
+        <div id="alert">This is an alert message.</div>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2024 Example. All rights reserved.</p>
+        <p><a href="#">Back to top</a></p>
+    </div>
+</body>
+</html>
+
